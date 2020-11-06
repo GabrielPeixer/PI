@@ -49,17 +49,22 @@ if (isset($_POST['btn-entrar'])) {
 </head>
 
 <body>
-    <div class="topo-header">
-        <img class="logo" src="img/logo.png">
-        <p class="descricao">Plataforma para validação de atividades complementares</p>
+    <p class="descricao py-3">
+        <h2 class="mb-5  text-center">
+            Plataforma para validação de atividades complementares
+        </h2>
+    </p>
+    <div class="topo-header my-5">
+        <img class="logo" src="img/logo-senai.png" style="opacity: 0.1; right: 0; bottom: 0; position: absolute;">
+
     </div>
     <?php
 
     ?>
 
-    <form id="telalogin" method="POST" action="valida.php">
+    <form class="centered mt-3" id="telalogin" method="POST" action="valida.php">
         <div class="card border-secondary mb-3" style="max-width: 18rem;">
-            <div class="card-header">Horas complementares login</div>
+            <div class="card-header"><b>Login</b></div>
             <div class="card-body text-secondary">
                 <?php if (isset($_SESSION['msg'])) { ?>
                     <div class="alert alert-danger">
@@ -80,11 +85,14 @@ if (isset($_POST['btn-entrar'])) {
                             <input type="password" name="senha" class="form-control" placeholder="Senha">
                         </div>
 
-                        <button type="submit" id="logar" name="btnLogin" value="logar" class="btn btn-primary">Entrar</button>
+                        <button type="submit" id="logar" name="btnLogin" value="logar" class="mt-3 
+                        btn btn-primary">Entrar</button>
 
                     </div>
             </div>
     </form>
+
+
 
 </body>
 

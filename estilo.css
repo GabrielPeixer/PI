@@ -1,5 +1,8 @@
-body{
-    background-color:#ACDFBA;
+
+
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -7,93 +10,92 @@ body{
 
 /* Formatação do menu */
 
-.menu{
-    background-color: #E5E5E5;
+.menu {
+    background-color: #e5e5e5;
     height: 600px;
     min-width: 300px;
 }
 
-nav{
+nav {
     width: 100%;
     position: absolute;
 }
 
-nav a{
+nav a {
     text-decoration: none;
 }
 
-.link{
-    background-color: #E5E5E5;
+.link {
+    background-color: #e5e5e5;
     padding: 20px;
     font-size: 12pt;
-    color:black;
+    color: black;
     border-bottom: 2px solid white;
 }
 
-.link.active{
+.link.active {
     font-weight: bold;
     background-color: white;
 }
 
 .principal {
-    background-color:white;
+    background-color: white;
     height: 600px;
 }
 
-.principal h3{
+.principal h3 {
     text-align: center;
     margin-right: 570px;
 }
 
-.principal p{
+.principal p {
     text-align: center;
     margin-right: 205px;
 }
 
 .topo-header {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100px;
 }
 
-.descricao{
+.descricao {
     font-size: 12px;
     text-align: center;
     width: 200px;
 }
 
-.logo img{
-    width:200px;
-    position: absolute; 
+.logo img {
+    width: 200px;
+    position: absolute;
     right: 575px;
 }
 
-.tela-login{
+.tela-login {
     display: flex;
     justify-content: center;
     text-align: center;
-} 
+}
 
-
-form#telalogin{
+form#telalogin {
     display: flex;
     justify-content: center;
     padding: 1.25rem;
     text-align: center;
 }
 
-form#telalogin input.form-control{
+form#telalogin input.form-control {
     width: 120%;
 }
 
-.dadosUsuario{
+.dadosUsuario {
     margin-left: 360px;
     margin-top: 100px;
 }
 
-.modalidade{
+.modalidade {
     margin-left: 220px;
     margin-top: 20px;
 }
@@ -112,16 +114,100 @@ form#telalogin input.form-control{
 .options {
     text-align: left;
 }
-footer{
+footer {
     background-color: #808080;
     height: 60px;
-    bottom:0;
-    width:100%;
+    bottom: 0;
+    width: 100%;
     position: fixed;
 }
 
-footer p{
+footer p {
     text-align: right;
     font-size: 12px;
+}
 
-} 
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.main-content{
+	width: 50%;
+	border-radius: 20px;
+	box-shadow: 0 5px 5px rgba(0,0,0,.4);
+	margin: 5em auto;
+	display: flex;
+}
+.company__info{
+	background-color: #008080;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+}
+.fa-android{
+	font-size:3em;
+}
+@media screen and (max-width: 640px) {
+	.main-content{width: 90%;}
+	.company__info{
+		display: none;
+	}
+	.login_form{
+		border-top-left-radius:20px;
+		border-bottom-left-radius:20px;
+	}
+}
+@media screen and (min-width: 642px) and (max-width:800px){
+	.main-content{width: 70%;}
+}
+.row > h2{
+	color:#008080;
+}
+.login_form{
+	background-color: #fff;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+form{
+	padding: 0 2em;
+}
+.form__input{
+	width: 100%;
+	border:0px solid transparent;
+	border-radius: 0;
+	border-bottom: 1px solid #aaa;
+	padding: 1em .5em .5em;
+	padding-left: 2em;
+	outline:none;
+	margin:1.5em auto;
+	transition: all .5s ease;
+}
+.form__input:focus{
+	border-bottom-color: #008080;
+	box-shadow: 0 0 5px rgba(0,80,80,.4); 
+	border-radius: 4px;
+}
+.btn{
+	transition: all .5s ease;
+	width: 70%;
+	border-radius: 30px;
+	color:#008080;
+	font-weight: 600;
+	background-color: #fff;
+	border: 1px solid #008080;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+.btn:hover, .btn:focus{
+	background-color: #008080;
+	color:#fff;
+}
