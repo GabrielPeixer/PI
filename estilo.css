@@ -123,7 +123,7 @@ footer {
 }
 
 footer p {
-    text-align: right;
+    text-align: center;
     font-size: 12px;
 }
 
@@ -211,3 +211,17 @@ form{
 	background-color: #008080;
 	color:#fff;
 }
+
+/* .tg-nav {
+    z-index: 2;
+    float: left;
+    width: 100%;
+    text-align: center;
+    font: 400 13px/40px 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.tg-navigation > ul {
+    width: auto;
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+} */
