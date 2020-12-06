@@ -14,7 +14,7 @@ $idLogado = $_SESSION['id_usuario'];
 $status = $_POST['status'];
 $nome = $_POST['nome'];
 
-$sql = "SELECT * FROM `horasAlunos` INNER JOIN usuarios ON horasAlunos.id_usuario = usuarios.id_usuario WHERE `status` = '$status' AND `nome` = '$nome'";
+$sql = "SELECT * FROM `horasalunos` INNER JOIN usuarios ON horasalunos.id_usuario = usuarios.id_usuario WHERE `status` = '$status' AND `nome` = '$nome'";
 $relatorio = mysqli_query($conexao, $sql);
 ?>
 

@@ -13,7 +13,7 @@ $idLogado = $_SESSION['id_usuario'];
 
 $id = $_GET['id'];
 $sql = "SELECT * FROM `horasalunos` WHERE `id_horas` = $id limit 1";
-$horasAlunos = mysqli_query($conexao, $sql);
+$horasalunos = mysqli_query($conexao, $sql);
 ?>
 
 <!DOCTYPE html>
@@ -76,7 +76,7 @@ $horasAlunos = mysqli_query($conexao, $sql);
         <div id="principal" class="principal col-9">
             <h7>Dados da solicitação</h7>
 
-            <?php while ($horas = mysqli_fetch_assoc($horasAlunos)) {
+            <?php while ($horas = mysqli_fetch_assoc($horasalunos)) {
                 $date = new dateTime($horas['dataCadastro']);
                 $arquivo = $horas['arquivo'];
             ?>

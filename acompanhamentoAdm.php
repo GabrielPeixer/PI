@@ -11,8 +11,8 @@ if (!empty($_SESSION['id_usuario'])) {
 }
 $idLogado = $_SESSION['id_usuario'];
 
-$sql = "SELECT * FROM `horasAlunos` INNER JOIN usuarios ON horasAlunos.id_usuario = usuarios.id_usuario where `status` = 'aguardando' ORDER BY `dataCadastro` DESC";
-$horasAlunos = mysqli_query($conexao, $sql);
+$sql = "SELECT * FROM `horasalunos` INNER JOIN usuarios ON horasalunos.id_usuario = usuarios.id_usuario where `status` = 'aguardando' ORDER BY `dataCadastro` DESC";
+$horasalunos = mysqli_query($conexao, $sql);
 
 ?>
 
@@ -62,7 +62,7 @@ $horasAlunos = mysqli_query($conexao, $sql);
             <th scope="col">Dados</th>
           </tr>
         </thead>
-        <?php while ($horas = mysqli_fetch_assoc($horasAlunos)) {
+        <?php while ($horas = mysqli_fetch_assoc($horasalunos)) {
           $date = new dateTime($horas['dataCadastro']);
 
         ?>
