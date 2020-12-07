@@ -49,23 +49,25 @@ if (isset($_POST['btn-entrar'])) {
 </head>
 
 <body>
-    <p class="descricao py-3">
-        <h2 class="mb-5  text-center">
+    <div class="teste">
+        <!-- <img class="logo" src="img/bg.jpg" > -->
+        <!-- <p class="descricao py-3"> -->
+        <!-- <h2 class="text-center" style="position: absolute; top: 20px">
             Plataforma para validação de atividades complementares
-        </h2>
-    </p>
-    <div class="topo-header my-5">
-        <img class="logo" src="img/logo-senai.png" style="opacity: 0.1; right: 0; bottom: 0; position: absolute;">
-
+        </h2> -->
+        <!-- </p> -->
     </div>
-    <?php
-
-    ?>
+    <!-- style="opacity: 0.1; right: 0; bottom: 0; position: absolute;" -->
+    <!-- topo-header my-5 -->
+    <!-- class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top" -->
 
     <form class="centered mt-3" id="telalogin" method="POST" action="valida.php">
         <div class="card border-secondary mb-3" style="max-width: 18rem;">
             <div class="card-header"><b>Login</b></div>
             <div class="card-body text-secondary">
+                <span style="font-size: smaller;">
+                    Plataforma para validação de atividades complementares
+                </span>
                 <?php if (isset($_SESSION['msg'])) { ?>
                     <div class="alert alert-danger">
                     <?php
