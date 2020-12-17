@@ -93,14 +93,7 @@ $relatorio = mysqli_query($conexao, $sql);
 
         </div>
 
-        <footer>
-            <p>
-                Federação das Indústrias do Estado de Santa Catarina <br>
-                Departamento Regional - Fone: 48 3231 4100 <br>
-                Rod. Admar Gonzaga, 2765 - Florianópolis/SC - 88034-001
-            </p>
 
-        </footer>
 </body>
 
 </html>
