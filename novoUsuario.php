@@ -48,7 +48,7 @@ $usuario = mysqli_query($conexao, $sql);
 
 <body>
   <div class="topo-header">
-    <img class="logo" src="img/logo.png">
+    <img class="logo" src="logo.png">
     <p class="descricao">Plataforma para validação de atividades complementares</p>
   </div>
   <div class="row">

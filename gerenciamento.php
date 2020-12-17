@@ -78,7 +78,7 @@ $horasalunos = mysqli_query($conexao, $sql);
                 <div>
                     <hr class="my-4">
                     <p class="lead">
-                        <a class="btn btn-primary btn-lg" style="width: 20%;" href="acompanhamentoSolicitacao.php" role="button">Acompanhar Solicitações</a>
+                        <a class="btn btn-primary btn-lg" style="width: 20%;" href="acompanhamentoAdm.php" role="button">Acompanhar Solicitações</a>
                     </p>
                 </div>
 

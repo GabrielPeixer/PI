@@ -48,10 +48,10 @@ $idLogado = $_SESSION['id_usuario'];
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="display: flex; justify-content: center;">
                 <div class="navbar-nav text-center">
                     <a class="nav-item nav-link" href="paginaAdm.php">Principal<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link active" href="acompanhamentoAdm.php">Acompanhar Solicitações</a>
+                    <a class="nav-item nav-link " href="acompanhamentoAdm.php">Acompanhar Solicitações</a>
                     <a class="nav-item nav-link" href="gerenciamento.php">Gerenciar Solicitações</a>
                     <a class="nav-item nav-link" href="relatorios.php">Relatorios</a>
-                    <a class="nav-item nav-link" href="sistema.php">Sistema</a>
+                    <a class="nav-item nav-link active" href="sistema.php">Sistema</a>
                     <a class="nav-item nav-link" href="sair.php">Sair
                     </a>
                 </div>

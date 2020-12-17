@@ -34,8 +34,8 @@ $idLogado = $_SESSION['id_usuario'];
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="display: flex; justify-content: center;">
         <div class="navbar-nav text-center">
-          <a class="nav-item nav-link active" href="paginaUsuario.php">Principal<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="novasolicitacao.php">Cadastrar nova solicitação</a>
+          <a class="nav-item nav-link " href="paginaUsuario.php">Principal<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="novasolicitacao.php">Cadastrar nova solicitação</a>
           <a class="nav-item nav-link" href="acompanhamentoSolicitacao.php">Acompanhamento de solicitações</a>
           <a class="nav-item nav-link" href="aprovadas.php">Solicitações aprovadas</a>
           <a class="nav-item nav-link" href="dadosUsuario.php">Dados do usuário</a>
@@ -50,7 +50,7 @@ $idLogado = $_SESSION['id_usuario'];
     <div class="jumbotron row justify-content-center align-self-center" style="height: 100vh;">
       <!-- <h5 class="mt-n4 pb-5">Lembre-se, a modalidade selecionada deve ter relação com a atividade.</h5> -->
       <div class="my-5">
-        <form method="POST" action="salvarHoras.php" class="modalidade">
+        <form method="POST" action="salvarHoras.php" class="">
           <div class="row ">
             <div id="modalidade" class="text-center">
 
@@ -71,7 +71,7 @@ $idLogado = $_SESSION['id_usuario'];
             </div>
 
             <div class="form-group align-self-center">
-              <select style="width: 575px;" name="titulo" class="custom-select">
+              <select style="width: 300px;" name="titulo" class="custom-select">
                 <option disabled selected>Atividade</option>
                 <option style="color: #ACDFBA;" disabled>ENSINO</option>
 
@@ -103,30 +103,33 @@ $idLogado = $_SESSION['id_usuario'];
 
               </select>
             </div>
-            </div>
-         
-              <div class="text-center">
-                <div class="col-4 p-5">
-                  <label for="upload">Arquivo para upload*</label>
-                  <input name="upload" type="file" class="form-control-file">
-                </div>
+          </div>
 
-                <div class="form-check">
-                  <input name="checkbox" type="checkbox" class="form-check-input">
-                  <label name="semUpload" class="form-check-label">Sem upload de arquivo</label>
-                </div>
+          <div class="row text-center">
+            <div class="col-12 p-5">
+              <!-- <label for="upload">Arquivo para upload*</label> -->
+              <input name="upload" type="file" class="form-control-file">
+              <div class="form-check">
+                <input name="checkbox" type="checkbox" class="form-check-input">
+                <label name="semUpload" class="form-check-label">Sem upload de arquivo</label>
               </div>
-          
-      
+            </div>
+
+          </div>
+
+
 
           <div style="width: 500px;" class="form-group">
             <label name="descricao">Descrição</label>
             <textarea name="descricao" class="form-control" id="descricao" rows="3"></textarea>
           </div>
 
-          <div class="btn-group">
-            <button style="width:150px;" type="reset" class="btn btn-secondary">Limpar</button>
-            <button style="width:150px;" type="submit" name="btnHoras" class="btn btn-primary">Enviar</button>
+
+          <div class="row d-flex justify-content-center">
+            <div class="btn-group">
+              <button style="width:150px;" type="reset" class="btn btn-secondary">Limpar</button>
+              <button style="width:150px;" type="submit" name="btnHoras" class="btn btn-primary">Enviar</button>
+            </div>
           </div>
         </form>
       </div>
